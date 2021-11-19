@@ -7,7 +7,7 @@ Implementation of regeorg tunnel in golang (victim side).
 build binary:
 ```
 git clone https://github.com/kost/regeorgo
-cd regeorgo/bin
+cd regeorgo/regeorgo
 go get
 go build
 ```
