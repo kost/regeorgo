@@ -26,11 +26,11 @@ type GeorgHandler struct {
 	sm map[string]net.Conn
 }
 
-func (gh *GeorgHandler) initHandler() {
+func (gh *GeorgHandler) InitHandler() {
 	gh.sm = make(map[string]net.Conn)
 }
 
-func (gh *GeorgHandler) regHandler(w http.ResponseWriter, r *http.Request) {
+func (gh *GeorgHandler) RegHandler(w http.ResponseWriter, r *http.Request) {
 	if gh.LogLevel>1 {
 		out, _ := httputil.DumpRequest(r, false)
 		fmt.Printf("%q\n", out)
